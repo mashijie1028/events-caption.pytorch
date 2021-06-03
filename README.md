@@ -6,7 +6,7 @@ The pipeline of events captioning is as follows:
 
 <img src="https://msj-typora-images.oss-cn-beijing.aliyuncs.com/20210603125906.png" alt="image-20210603125858880" style="zoom:33%;" />
 
-## Acknowledgement
+## Acknowledgements
 
 This repository is based on the video caption repository from [video-caption.pytorch](https://github.com/xiadingZ/video-caption.pytorch). Plus, the `pretrain_utils.py` and `torchvision_models.py` in `./my_utils` are borrowed from [pretrained-models.pytorch](https://github.com/Cadene/pretrained-models.pytorch).
 
@@ -38,10 +38,12 @@ This repository is based on the video caption repository from [video-caption.pyt
   ```
 
   * You could change the file path in python source code files according to your own file system. 
-  * You could change the hyper-parameters in `config.py` to change the features of event dataset, for example, the mean and variance of contrast threshold and noises.
+  * You could change the hyper-parameters in `configs.py` to change the features of event dataset, for example, the mean and variance of contrast threshold and noises.
   * To save storage, removing the image folders if necessary, merge the two files together is also recommended.
 
 * Now, you have already completed the generation and preparation of data.
+
+* **Note: change the file path variable in the source code file `*.py` if needed.**
 
 ## Train and Evaluate
 
@@ -57,7 +59,9 @@ This repository is based on the video caption repository from [video-caption.pyt
   python eval.py --results_path results_resnet50_n8_epoch100   --recover_opt checkpoints/resnet50_n_8/opt_info.json --saved_model checkpoints/resnet50_n_8/EveCap_100_epoch.pth.tar --batch_size 40 --gpu 0,1,2,3
   ```
 
-* Change the parameters if you want.
+* Change the hyper-parameters if you want.
+
+* **Note: change the file path variable in the source code file `*.py` or file path arguments in the command line if needed.**
 
 ## TO DO
 
