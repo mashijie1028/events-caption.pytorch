@@ -1,10 +1,10 @@
 # Events (from event cameras) Caption
 
-This repository explores to generalize event-based vision to multi-modal field. We could generate descriptive text  and natural language from the events (recorded by event cameras) end-to-end, namely "events captioning". 
+This repository explores generalizing event-based vision to multi-modal fields. We could generate descriptive text  and natural language from the events (recorded by event cameras) end-to-end, namely "events captioning". 
 
 The pipeline of events captioning is as follows: 
 
-<img src="https://msj-typora-images.oss-cn-beijing.aliyuncs.com/20210603125906.png" alt="image-20210603125858880" style="zoom:33%;" />
+<img src="https://msj-typora-images.oss-cn-beijing.aliyuncs.com/20210603125906.png" alt="image-20210603125858880" style="zoom:5%;" />
 
 ## Acknowledgements
 
@@ -38,8 +38,8 @@ This repository is based on the video caption repository from [video-caption.pyt
   ```
 
   * You could change the file path in python source code files according to your own file system. 
-  * You could change the hyper-parameters in `configs.py` to change the features of event dataset, for example, the mean and variance of contrast threshold and noises.
-  * To save storage, removing the image folders if necessary, merge the two files together is also recommended.
+  * You could change the hyper-parameters in `configs.py` to change the features of the event dataset, for example, the mean and variance of contrast threshold and noises.
+  * To save storage, removing the image folders if necessary, merging the two files together is also recommended.
 
 * Now, you have already completed the generation and preparation of data.
 
@@ -65,5 +65,5 @@ This repository is based on the video caption repository from [video-caption.pyt
 
 ## TO DO
 
-* More sophisticated models to perform better in  events captioning.
+* More sophisticated models to perform better in events captioning.
 * Compress the events dataset to save storage.
